@@ -45,11 +45,11 @@ a{color:inherit}
 .dark{background:var(--deep);color:#fff}
 .spotify{margin-top:18px;background:var(--spotify);color:#05210d}
 .hero-credit{margin:0;color:#91a79f;text-transform:uppercase;letter-spacing:.14em;font-size:.62rem}
-.featured-book{position:relative;display:grid;place-items:center;gap:18px;min-height:540px}
+.featured-book{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;min-height:540px}
 .featured-frame{position:relative;padding:24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.11)}
 .featured-frame:before{content:"";position:absolute;inset:-24px 28px 24px -28px;border:1px solid rgba(255,255,255,.07);z-index:-1}
 .featured-frame img{width:310px;max-height:475px;object-fit:contain;box-shadow:0 32px 75px rgba(0,0,0,.42)}
-.featured-caption{position:static;width:358px;max-width:100%;background:var(--paper);color:var(--ink);padding:16px 19px;box-shadow:0 14px 32px rgba(0,0,0,.18);border:1px solid rgba(16,40,39,.08)}
+.featured-caption{position:relative;inset:auto;width:358px;max-width:100%;background:var(--paper);color:var(--ink);padding:16px 19px;box-shadow:0 14px 32px rgba(0,0,0,.18);border:1px solid rgba(16,40,39,.08);z-index:2}
 .featured-caption span,.featured-caption small{display:block;text-transform:uppercase;letter-spacing:.13em;font-size:.55rem;font-weight:700}
 .featured-caption strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem;line-height:1;margin:4px 0 6px}
 .brand-line{background:#0a201e;color:#dbe3df;border-top:1px solid rgba(255,255,255,.04)}
